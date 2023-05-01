@@ -22,6 +22,7 @@ app.use("/images", express.static(path.join(__dirname, "/images")))
 mongoose.connect(process.env.URL, {
   useNewUrlParser: true,
   useUnifiedTopology: true, //useCreateIndex: true,
+  //useFindAndModify: true
 
 })
 
